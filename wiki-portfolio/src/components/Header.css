@@ -1,6 +1,51 @@
-/* Header.css */
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 250px; /* Push search bar to the far right */
+    padding: 0.5rem;
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #f9f9f9; 
+    margin-top: -40px;
+    width: 500px;
+}
 
-/* Container */
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: transparent; /* Match background with search bar */
+}
+.search-bar button.search-btn {
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    padding: 0.5rem 1rem; /* Padding for the button */
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-bar button.search-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #007BFF; /* Blue color for button */
+    transition: color 0.3s ease;
+}
+
+.search-bar button:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
 .header {
     background-color: white; /* White background for the header */
     padding: 1.3rem 2.5rem; /* Less padding to make it smaller */
@@ -14,39 +59,27 @@
 .hamburger {
     cursor: pointer;
     width: 1.25rem; /* Reduced width */
-    height: 1.1rem; /* Reduced height */
-    display: flex;
+    height: 4.6rem; /* Reduced height */
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1rem; /* Add space between hamburger and logo */
+    margin-right: 1rem;
 }
 
 .hamburger div {
     width: 100%;
-    height: 1.5px; /* Reduced thickness */
+    height: 2px; /* Reduced thickness */
     background-color: #000;
     border-radius: 20px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-top: 5px;
 }
 
-.hamburger.open div:nth-child(1) {
-    transform: rotate(45deg) translateY(4px);
-}
-
-.hamburger.open div:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.open div:nth-child(3) {
-    transform: rotate(-45deg) translateY(-4px);
-}
 
 /* Dropdown Menu */
 .dropdown-menu {
     position: absolute;
     top: 2.5rem; /* Positioned directly below hamburger */
     left: 2rem;
+    margin-top: 5px;
     background-color: white;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -78,7 +111,8 @@
 
 /* Logo Section */
 .logo-container {
-    margin-left:15px; /* Push logo to the far right */
+    margin-left:15px; 
+    margin-top: -50px;/* Push logo to the far right */
 }
 
 .logo {

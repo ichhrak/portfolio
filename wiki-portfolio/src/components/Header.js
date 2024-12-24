@@ -37,13 +37,19 @@ const Header = () => {
         </a>
       </div>
 
-      {/* Wikipedia Logo */}
-      <div className="logo-container">
-        <img
-          src={logo}  // Use the imported local image
-          alt="Wikipedia Logo"
-          className="logo"
-        />
+      {/* Wikipedia Logo and Search Bar */}
+      <div className="logo-search-container">
+        <div className="logo-container">
+          <img
+            src={logo}  // Use the imported local image
+            alt="Wikipedia Logo"
+            className="logo"
+          />
+        </div>
+        <div className="search-container">
+          <input type="text" placeholder="Search..." className="search-bar" />
+          <button className="search-button">Search</button>
+        </div>
       </div>
     </header>
   );
