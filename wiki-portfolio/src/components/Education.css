@@ -1,0 +1,100 @@
+/* Font Import */
+@font-face {
+    font-family: 'Linux Libertine';
+    src: url('/fonts/LinLibertine_R.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Main Layout */
+  .about-layout2 {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+    font-family: 'Linux Libertine', Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  /* Left Bar */
+  .left-bar2 {
+    flex: 0 0 20%; /* Restrict the left bar to 20% of the page */
+    max-width: 250px; /* Cap width */
+    padding: 20px;
+  }
+  
+  /* Flex Container for Name, Line, and Content Below */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between name+line and the content section */
+    flex: 1;
+  }
+  
+  /* Name and Line Section (Name + Horizontal line) */
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20%;
+  }
+  
+  /* About Left Section (Text) */
+  .about-left2 {
+    flex: 1;
+    max-width: 80%; /* 70% width for text */
+  }
+  
+  .about-left h2 {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .arrow {
+    margin-left: 5px;
+  }
+  
+  /* Horizontal line below name */
+  .about-line {
+    width: 100%; /* Ensure the line takes the full available width */
+    border: none;
+    border-top: 2px solid #ccc; /* Add a top border for the line */
+    margin: 10px 0; /* Ensure there's space above and below the line */
+  }
+  
+  /* Gray Box Below the Line (Positioned Below Text) */
+  .about-bottom {
+    display: flex; 
+    gap: 1rem;  /* Space between text and gray container */
+  }
+  
+  /* Gray Box */
+  .about-right {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 25%; /* 30% width for gray container */
+  }
+  
+  /* About Right Content */
+  .about-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-img {
+    width: 80%;
+    height: 1000px;
+    border-radius: 8px;
+  }
+  

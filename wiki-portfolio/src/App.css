@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Set the main background to white */
+  color: #333; /* Dark text color for good contrast */
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header section */
+header {
+  background-color: white; /* Set background of header to white */
+  padding: 20px 0;
+}
+
+/* Header image and title */
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 20px;
+}
+
+/* Desktop navigation links */
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+nav a {
+  color: #0066cc; /* Blue color for navigation */
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Menu styles */
+button span {
+  display: block;
+}
+
+button span:nth-child(1),
+button span:nth-child(2),
+button span:nth-child(3) {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 1024px) {
+  nav {
+    display: none; /* Hide desktop nav */
+  }
+  .lg:hidden {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .lg:hidden.absolute {
+    display: block; /* Show mobile menu when activated */
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .fixed {
+    display: none;
+  }
+
+  .text-white {
+    color: white;
+  }
+}
+
